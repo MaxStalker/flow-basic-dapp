@@ -3,18 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@onflow/fcl": "^0.0.38",
+    "@onflow/sdk": "^0.0.23",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.2.2",
+    "mobx-state-tree": "^3.16.0",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev:emulator": "flow emulator start -v",
+    "dev:wallet": "set PK=afda5397643e786c351e8155667de544ecec94ddabd4ba0c8f2a33558b582bda && fcl-wallet"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@onflow/dev-wallet": "^0.0.7",
+    "raw-loader": "^4.0.1",
+    "react-app-rewired": "^2.1.6"
   }
 }
