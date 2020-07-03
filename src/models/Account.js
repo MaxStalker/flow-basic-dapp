@@ -5,7 +5,7 @@ import { NullableString } from "./types";
 
 fcl
   .config()
-  .put("challenge.handshake", "http://localhost:8701/flow/authenticate");
+  .put("challenge.handshake", "http://localhost:8702/flow/authenticate");
 
 export const Authorization = types.model({
   addr: types.string,

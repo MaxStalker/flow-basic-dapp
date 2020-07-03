@@ -2,15 +2,15 @@
   "accounts": {
     "service": {
       "address": "f8d6e0586b0a20c7",
-      "privateKey": "afda5397643e786c351e8155667de544ecec94ddabd4ba0c8f2a33558b582bda",
+      "privateKey": "bf9db4706c2fdb9011ee7e170ccac492f05427b96ab41d8bf2d8c58443704b76",
       "sigAlgorithm": "ECDSA_P256",
       "hashAlgorithm": "SHA3_256"
     }
   },
   "devWallet": {
     "accessNode": {
-      "endpoint": "http://localhost:8080"
+      "endpoint": "http://localhost:8081"
     },
-    "port": 8701
+    "port": 8702
   }
 }

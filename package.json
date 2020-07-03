@@ -22,8 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev:emulator": "flow emulator start -v",
-    "dev:wallet": "set PK=afda5397643e786c351e8155667de544ecec94ddabd4ba0c8f2a33558b582bda && fcl-wallet"
+    "dev:emulator": "flow emulator start -v --http-port 8081 -p 3570",
+    "dev:wallet": "set PK=bf9db4706c2fdb9011ee7e170ccac492f05427b96ab41d8bf2d8c58443704b76 && fcl-wallet"
   },
   "eslintConfig": {
     "extends": "react-app"
