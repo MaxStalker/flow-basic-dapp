@@ -12,13 +12,13 @@ pub contract BasicNFT {
 
 	pub struct casualNFT{
 		pub let id: UInt64
-		pub let name: String
 
 		init(id: UInt64, name: String){
 			self.id = id
-			self.name = name;
 		}
 	}
+
+
 
 	pub resource interface Receiver{
 		pub fun deposit(token: @NFT)
@@ -30,7 +30,22 @@ pub contract BasicNFT {
 		pub var tokens: @{UInt64: NFT}
 
 		init(){
+			var test:String = "test"
 			self.tokens <- {}
+		}
+
+		pub fun testMethod():String{
+			post {
+				result != "hello":
+					"something went wrong"
+			}
+
+			var b:Int? =  5
+			if let a = b {
+				return "OK"
+			} else {
+				return "BAD"
+			}
 		}
 
 		pub fun withdraw(id: UInt64): @NFT{
