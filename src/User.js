@@ -11,9 +11,10 @@ import {
 import NetworkInteraction from "./NetworkInteraction";
 
 const User = (props) => {
-  const { account } = props;
+  const { account, contract } = props;
   const { name, address } = account;
   const { login, logout } = account;
+  const { deploy } = contract;
   return (
     <Container>
       {name ? (
@@ -27,6 +28,9 @@ const User = (props) => {
               <Label>Address:</Label>
               <Username>{address}</Username>
             </GroupRow>
+            <GroupRow>
+              <Button onClick={deploy}>DeployContract</Button>
+            </GroupRow>
             <Button onClick={logout}>Logout</Button>
           </Column>
         </Column>
@@ -38,4 +42,4 @@ const User = (props) => {
   );
 };
 
-export default inject("account")(observer(User));
+export default inject("account", "contract")(observer(User));

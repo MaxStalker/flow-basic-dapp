@@ -36,6 +36,7 @@ export const GroupRow = styled(Row)`
   align-items: center;
   justify-content: flex-start;
   font-size: 16px;
+  margin-bottom: 10px;
 `;
 
 export const Button = styled.button`

@@ -46,7 +46,7 @@ export const Account = types
       fcl.currentUser().subscribe(self.update);
     },
     update: (user) => {
-      console.log({ user });
+      // console.log({ user });
       self.address = getAddress(user);
       self.name = getIdentityName(user);
       self.authorizations = getAuthorizations(user);
