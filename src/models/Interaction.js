@@ -19,9 +19,10 @@ export const Interaction = types
     basicScript: flow(function* () {
       const { send } = fcl;
       const { baseScript } = self;
-      const script = sdk.script`${baseScript}`;
+
       self.interacting = true;
 
+      const script = sdk.script`${baseScript}`;
       const response = yield send([script]);
       console.log({ response });
 
