@@ -9,7 +9,7 @@
   },
   "devWallet": {
     "accessNode": {
-      "endpoint": "http://localhost:8081"
+      "endpoint": "http://localhost:8080"
     },
     "port": 8702
   }
